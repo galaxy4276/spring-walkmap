@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.core.type.AnnotatedTypeMetadata;
+import org.springframework.http.codec.xml.XmlEventDecoder;
 
 @MyAutoConfiguration
 @Conditional(TomcatWebServerConfig.TomcatCondition.class)
