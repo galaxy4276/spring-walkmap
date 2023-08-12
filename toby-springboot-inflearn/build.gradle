@@ -11,6 +11,10 @@ java {
     sourceCompatibility = '17'
 }
 
+ext {
+    set("jakarta-servlet.version", '5.0.0')
+}
+
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
@@ -23,6 +27,7 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-jetty'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
