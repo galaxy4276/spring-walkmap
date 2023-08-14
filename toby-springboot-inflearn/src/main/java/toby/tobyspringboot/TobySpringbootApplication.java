@@ -1,24 +1,15 @@
 package toby.tobyspringboot;
 
 import config.MySpringBootApplication;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.core.env.Environment;
 
 @MySpringBootApplication
 public class TobySpringbootApplication {
-
-//    @Bean
-//    public ServletWebServerFactory servletWebServerFactory() {
-//        return new TomcatServletWebServerFactory();
-//    }
-//
-//    @Bean
-//    public DispatcherServlet dispatcherServlet() {
-//        return new DispatcherServlet();
-//    }
-
     public static void main(String[] args) {
-//        MySpringApplication.run(TobySpringbootApplication.class, args);
         SpringApplication.run(TobySpringbootApplication.class, args);
     }
-
 }

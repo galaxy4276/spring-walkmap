@@ -11,3 +11,7 @@
 [[spring] ApplicationContextAware 인터페이스와 BeanNameAware 인터페이스](https://blog.naver.com/simpolor/221919272642)
 
 [[Spring] Meta Annotation 이란?(@Target, @Retention)](https://sanghye.tistory.com/39)
+
+[Spring Boot AutoConfiguration 자동 설정, 원리](https://sujl95.tistory.com/58)
+
+[Environment 추상화 공식문서](https://docs.spring.io/spring-framework/reference/core/beans/environment.html)

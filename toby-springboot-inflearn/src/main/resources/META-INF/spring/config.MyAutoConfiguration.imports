@@ -1,3 +1,5 @@
 config.autoconfig.TomcatWebServerConfig
 config.autoconfig.JettyWebServerConfig
 config.autoconfig.DispatcherServletConfig
+config.autoconfig.PropertyPlaceholderConfig
+config.autoconfig.ServerPropertiesConfig
