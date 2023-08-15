@@ -1,7 +1,9 @@
-package toby.tobyspringboot;
+package toby.tobyspringboot.helloboot;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import toby.tobyspringboot.HelloDecorator;
+import toby.tobyspringboot.SimpleHelloService;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

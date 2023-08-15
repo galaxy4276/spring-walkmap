@@ -1,9 +1,10 @@
 package config.autoconfig;
 
+import config.MyConfigurationProperties;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.context.annotation.Configuration;
 
+@MyConfigurationProperties(prefix = "server")
 @Getter
 @Setter
 public class ServerProperties {
