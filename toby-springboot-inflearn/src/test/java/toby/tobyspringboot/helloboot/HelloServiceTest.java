@@ -2,7 +2,9 @@ package toby.tobyspringboot.helloboot;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import toby.tobyspringboot.Hello;
 import toby.tobyspringboot.HelloDecorator;
+import toby.tobyspringboot.HelloRepository;
 import toby.tobyspringboot.SimpleHelloService;
 
 import java.lang.annotation.ElementType;
@@ -24,7 +26,15 @@ public class HelloServiceTest {
 
     @FastUnitTest
     void simpleHelloService() {
-        SimpleHelloService helloService = new SimpleHelloService();
+        SimpleHelloService helloService = new SimpleHelloService(new HelloRepository() {
+            @Override
+            public Hello findHello(String name) {
+                return null;
+            }
+
+            @Override
+            public void increaseCount(String name) {}
+        });
 
         String ret = helloService.sayHello("Test");
         Assertions.assertThat(ret).isEqualTo("Hello Test");
